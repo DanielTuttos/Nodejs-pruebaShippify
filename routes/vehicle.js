@@ -1,9 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const { sequelize } = require("../config/mysqlConfig")
 const { getVehicleByDriver, postVehicleCreation, updateVehicle, deleteVehicle } = require("../controllers/Vehicle.controller")
-const { handleHttpError } = require("../utils/handleError")
-const { handleHttpOk } = require("../utils/handleOk")
 
 /**
  * Get Vehicle by Driver
