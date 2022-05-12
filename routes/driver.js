@@ -5,7 +5,9 @@ const { handleHttpError } = require("../utils/handleError")
 const { handleHttpOk } = require("../utils/handleOk")
 const router = express.Router()
 
-// login
+/**
+ * Get Drivers
+ */
 router.get("/alldrivers", getAllDrivers)
 
 module.exports = router
