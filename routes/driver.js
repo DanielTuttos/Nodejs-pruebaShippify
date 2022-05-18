@@ -8,6 +8,6 @@ const router = express.Router()
 /**
  * Get Drivers
  */
-router.get("/alldrivers", getAllDrivers)
+router.get("/alldrivers/:nameid", getAllDrivers)
 
 module.exports = router
